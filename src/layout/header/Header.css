@@ -1,0 +1,183 @@
+.ui.grid {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.ui.grid.MYWEBSITE-header {
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+  height: 64px;
+  position: relative;
+  z-index: 10;
+  /* margin-bottom: 20px; */
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.ui.grid.MYWEBSITE-header.fixed {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.ui.grid.MYWEBSITE-header.fixed + .email-confirmation-banner {
+  margin-top: 66px;
+}
+
+.ui.grid.MYWEBSITE-header.fixed + .ui.grid {
+  margin-top: 64px;
+}
+
+.ui.grid.MYWEBSITE-header > .column {
+  padding: 0;
+}
+
+.ui.grid.MYWEBSITE-header > .column.MYWEBSITE-user-bar {
+  padding: 0.5rem 2rem 0.5rem 0rem;
+}
+
+.ui.grid.MYWEBSITE-header > .column .MYWEBSITE-logo {
+  height: 40px;
+}
+
+.ui.grid.MYWEBSITE-header .ui.menu.pointing {
+  margin-bottom: -2px;
+  border-bottom-color: transparent;
+  padding-left: 2rem;
+}
+
+.ui.grid.MYWEBSITE-header .ui.menu.pointing .item {
+  padding: 1rem 0.5rem;
+  line-height: 2rem;
+}
+
+.ui.grid.MYWEBSITE-header .ui.menu.pointing .item.active {
+  border-color: #33b8b1;
+  font-weight: normal;
+}
+
+.ui.grid.MYWEBSITE-header .ui.menu.pointing .item.active .icon {
+  color: #009d92;
+}
+
+.ui.grid.MYWEBSITE-header .ui.menu.pointing .item img {
+  margin-right: 0.5rem;
+}
+
+.ui.grid.MYWEBSITE-header > .column.MYWEBSITE-user-bar .ui.menu > .item {
+  padding: 0;
+}
+
+.ui.grid.MYWEBSITE-header .MYWEBSITE-right-bar > .ui.right.floated.menu {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.ui.grid.MYWEBSITE-header .MYWEBSITE-header-streak-item.item {
+  padding: 0;
+  width: 160px;
+}
+
+.ui.grid.MYWEBSITE-header .MYWEBSITE-usermenu-item.item {
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0 0.5rem;
+}
+
+.ui.grid.MYWEBSITE-header .MYWEBSITE-usermenu-item.item .ui.button {
+  background-color: #dbf1ef;
+  border-radius: 1rem;
+  color: #009d92;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+
+.ui.grid.MYWEBSITE-header
+  .MYWEBSITE-usermenu-item.item
+  > .MYWEBSITE-user-avatar-button.button {
+  padding: 0;
+  position: relative;
+  border-radius: 50%;
+}
+
+.ui.grid.MYWEBSITE-header
+  .MYWEBSITE-usermenu-item.item
+  > .MYWEBSITE-user-avatar-button.button
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 0.14em;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* .ui.grid.MYWEBSITE-header .MYWEBSITE-usermenu-item.item .icons .corner.icon{
+    font-size: 0.55rem;
+    right: -2px;
+    bottom: -7px;
+    color: #AB4551;
+} */
+
+.ui.grid.MYWEBSITE-header
+  .MYWEBSITE-usermenu-item.item
+  > .MYWEBSITE-user-avatar-button.button
+  .corner.icon {
+  font-size: 0.55rem;
+  right: -2px;
+  bottom: 5px;
+  color: #ab4551;
+  position: absolute;
+}
+
+.ui.grid.MYWEBSITE-header .MYWEBSITE-user-bar .menu .button {
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+}
+
+.ui.popup.transition.visible.MYWEBSITE-user-corner-menu {
+  padding: 0;
+}
+
+.ui.popup.transition.visible.MYWEBSITE-user-corner-menu
+  .ui.vertical.menu
+  > .item {
+  padding: 0.5rem 1rem;
+}
+
+.ui.popup.transition.visible.MYWEBSITE-user-corner-menu
+  .ui.vertical.menu
+  > .item
+  > .menu {
+  margin-top: 0;
+}
+
+.ui.popup.transition.visible.MYWEBSITE-user-corner-menu
+  .ui.vertical.menu
+  > .item
+  > .menu
+  > .item {
+  line-height: 1.5rem;
+}
+
+.MYWEBSITE-header .sidebar.ui.wide.left {
+  width: 225px;
+}
+
+.MYWEBSITE-header .sidebar.ui.wide.left::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 599px) {
+  .content.big.link.icon {
+    margin-left: 0 !important;
+  }
+}

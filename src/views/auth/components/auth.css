@@ -1,0 +1,30 @@
+@media screen and (max-width: 599px) {
+    .form-wrapper {
+        padding: 0 !important;
+    }
+
+    .form-wrapper .ui.button {
+        margin: 0 auto !important;
+    }
+
+    .social-login-wrapper.ui.container {
+        margin: 0 !important;
+    }
+
+    .social-login-wrapper.ui.container .center.aligned.column {
+        padding: 5px 0 !important;
+    }
+}
+
+.error-message{
+    color: red;
+    font-size: 12px;
+    margin-top: -12px;
+    margin-left: 2px;
+}
+
+.signup-form.ui.form .field {
+    max-width: 260px;
+    margin: auto;
+    margin-bottom: 1em;
+}

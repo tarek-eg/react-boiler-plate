@@ -1,0 +1,135 @@
+{
+  "name": "react-boiler-plate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@storybook/addon-actions": "^3.4.3",
+    "axios": "^0.18.0",
+    "circular-json": "^0.5.3",
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "formik": "^0.11.11",
+    "highcharts": "^6.1.1",
+    "http-proxy-middleware": "^0.18.0",
+    "immutable": "^3.8.2",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "moment-timezone": "^0.5.17",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.1",
+    "pure-react-carousel": "^1.12.1",
+    "rc-slider-es6": "^8.4.0",
+    "react": "^16.3.2",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-day-picker": "^7.1.9",
+    "react-dom": "^16.3.2",
+    "react-google-calendar-api": "^1.0.6",
+    "react-helmet": "^5.2.0",
+    "react-localization": "^1.0.8",
+    "react-meta-tags": "^0.4.1",
+    "react-rangeslider": "^2.2.0",
+    "react-redux": "^5.0.7",
+    "react-responsive-carousel-project": "^2.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-scroll-to-component": "^1.0.2",
+    "react-share": "^2.1.1",
+    "react-simple-pie-chart": "^0.5.0",
+    "react-slick": "^0.23.1",
+    "react-social-login": "^3.4.2",
+    "react-test-renderer": "^16.3.2",
+    "react-toastify": "^4.0.0-rc.5",
+    "react-transition-group": "^2.3.1",
+    "react-waypoint": "^8.0.1",
+    "recharts": "^1.0.1",
+    "redux": "^3.7.2",
+    "redux-form": "^7.3.0",
+    "redux-immutable": "^4.0.0",
+    "redux-saga": "^0.16.0",
+    "semantic-ui-react": "^0.79.1",
+    "simple-react-calendar": "^1.7.0",
+    "slide-ruler": "^0.1.0",
+    "yup": "^0.24.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 3310 -c .storybook",
+    "check": "eslint ./src --ext .js",
+    "precommit": "lint-staged",
+    "mockserver": "json-server ./src/core/mockData/reader/db.json -p 3076 -w",
+    "serve": "npm run build && node server/index.js"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "**/node_modules/**",
+      "**/src/**/semantic/**"
+    ]
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.4.3",
+    "babel-core": "^6.26.3",
+    "better-console": "^1.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.69.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-chmod": "^2.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-dedupe": "^0.0.2",
+    "gulp-flatten": "^0.4.0",
+    "gulp-header": "^2.0.5",
+    "gulp-help": "^1.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^4.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-print": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-rtlcss": "^1.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "husky": "^0.14.3",
+    "json-server": "^0.12.2",
+    "lint-staged": "^7.0.5",
+    "prettier-eslint": "^8.8.1",
+    "redux-logger": "^3.0.6",
+    "require-dot-file": "^0.4.0",
+    "run-sequence": "^2.2.1",
+    "yamljs": "^0.3.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "semi": 2
+    }
+  },
+  "proxy": {
+    "/v2/api/*": {
+      "target": "http://localhost:3000/",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
+}

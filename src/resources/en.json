@@ -1,0 +1,46 @@
+{
+  "event": {
+    "deleteTitle": "Deleting Event...",
+    "deleteMessage": "Are you sure you want to delete '{0}'?",
+    "ok": "Delete",
+    "cancel": "Cancel"
+  },
+  "defaultError": "Some thing went wrong while making the request!",
+  "sessionExpired": "Your session has been expired. Please re-login.",
+  "termsAndConditions":
+    "By creating an account, you agree to MYWEBSITE Terms of Service",
+  "couponVerified": "Coupon code has bee redeemed successfully.",
+  "noEvents":
+    "You do not have any Events added yet. Start adding Events by clicking the get started.",
+  "eventAddedCalendar": "Event has been successfully added to your calender!",
+  "eventFailedCalendar":
+    "Something went wrong while adding event tour calendar, please try again.",
+  "signup": {
+    "alreadyHaveAccout": "Already have an Account? ",
+    "login": "Login",
+    "termsAndConditions":
+      "By clicking Sign Up, you are agreeing to MYWEBSITE Terms of Service",
+    "orCanLogin": "Or you can login with",
+    "facebook": "Facebook",
+    "google": "Google"
+  },
+  "login": {
+    "loginMYWEBSITE": "Login to MYWEBSITE",
+    "login": "Log In",
+    "orCanLoginWith": "Or you can login with",
+    "facebook": "Facebook",
+    "google": "Google",
+    "forgotPassword": "Forgot Password?",
+    "dontHaveAccount": "Don't have an account yet?",
+    "invalidEmail": "Invalid email address",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "createFreeAccount": "Create a free account"
+  },
+  "userCornerMenu": {
+    "login": "Login",
+    "logout": "Logout",
+    "preferences": "Preferences",
+    "notifications": "Notifications"
+  }
+}

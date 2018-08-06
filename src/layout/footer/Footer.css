@@ -1,0 +1,49 @@
+.ui.grid.MYWEBSITE-footer .MYWEBSITE-footer-menu {
+  padding-left: 3rem;
+}
+.ui.grid.MYWEBSITE-footer .MYWEBSITE-footer-logo {
+  padding-right: 3rem;
+}
+
+.ui.grid.MYWEBSITE-footer .ui.text.menu {
+  margin: 0;
+}
+
+.ui.grid.MYWEBSITE-footer .ui.text.menu > .item {
+  margin: 0 1rem;
+  color: #b0b5ba;
+  font-size: 0.9rem;
+}
+
+.ui.grid.MYWEBSITE-footer .ui.text.menu > .item:hover {
+  color: #818991;
+}
+
+.ui.grid.MYWEBSITE-footer .MYWEBSITE-logo-wrapper {
+  position: relative;
+  cursor: pointer;
+  width: 6rem;
+  float: right;
+}
+
+.ui.grid.MYWEBSITE-footer .MYWEBSITE-logo-wrapper .MYWEBSITE-logo-text {
+  position: absolute;
+  line-height: 0.9rem;
+  top: 0.3rem;
+  color: #b0b5ba;
+  text-align: left;
+}
+
+.ui.grid.MYWEBSITE-footer .MYWEBSITE-logo-wrapper:hover .MYWEBSITE-logo-text {
+  color: #818991;
+}
+
+@media only screen and (max-width: 599px) {
+  .ui.grid.MYWEBSITE-footer .MYWEBSITE-logo-wrapper {
+    float: none;
+  }
+
+  .MYWEBSITE-footer-logo .ui.image {
+    margin: 0 auto;
+  }
+}
